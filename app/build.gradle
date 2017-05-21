@@ -5,7 +5,7 @@ android {
     buildToolsVersion "25.0.3"
     defaultConfig {
         applicationId "nassaty.dev"
-        minSdkVersion 16
+        minSdkVersion 21
         targetSdkVersion 25
         versionCode 1
         versionName "1.0"
@@ -33,5 +33,8 @@ dependencies {
     compile 'com.jakewharton:butterknife:8.6.0'
     compile 'com.android.support:cardview-v7:25.3.1'
     compile 'com.android.support:recyclerview-v7:25.3.1'
+    compile 'com.ramotion.foldingcell:folding-cell:1.1.0'
+    compile 'me.riddhimanadib.bottom-nav-bar:bottom-nav-bar:1.0.1'
+    compile 'com.android.volley:volley:1.0.0'
     testCompile 'junit:junit:4.12'
 }

@@ -86,7 +86,8 @@
 				android:layout_margin="20dp"
 				android:background="@drawable/btnbg"
 				android:textColor="#fff"
-				android:textSize="20sp"/>
+				android:textSize="20sp"
+				android:onClick="login"/>
 			
 			<TextView
 				android:layout_width = "wrap_content"
