@@ -30,10 +30,10 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+
         phone = (TextView)findViewById(R.id.phone);
         password = (TextView)findViewById(R.id.password);
         request = Volley.newRequestQueue(LoginActivity.this);
-
 
     }
 
