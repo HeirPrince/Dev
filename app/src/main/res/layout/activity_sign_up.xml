@@ -6,7 +6,7 @@
 	android:layout_width = "match_parent"
 	android:layout_height = "match_parent"
 	android:background="@drawable/accountbg"
-	tools:context = "nassaty.dev.SignUp">
+	tools:context = "nassaty.dev.ui.SignUp">
 	
 	<TextView
 		android:layout_width = "wrap_content"
@@ -14,7 +14,7 @@
 		android:gravity="center"
 		android:text="PlayMate"
 		android:textSize="30sp"
-		android:textColor="#fff"
+		android:textColor="#2196F3"
 		android:layout_alignParentTop = "true"
 		android:layout_centerHorizontal = "true"
 		android:layout_marginTop = "44dp"
@@ -31,7 +31,7 @@
 		android:layout_marginBottom="10dp"
 		android:elevation="10dp"
 		app:cardCornerRadius="10dp"
-		app:cardBackgroundColor="@color/colorPrimaryDark">
+		app:cardBackgroundColor="#fff">
 		
 		<LinearLayout
 			android:layout_width = "match_parent"
@@ -45,13 +45,13 @@
 			android:id="@+id/phoneholder"
 			android:layout_margin="20dp">
 			
-			<EditText
+			<android.support.design.widget.TextInputEditText
 				android:layout_width = "match_parent"
 				android:layout_height = "wrap_content"
-				android:id="@+id/phone"
-				android:hint="Phone Number"
+				android:id="@+id/nm"
+				android:hint="Name"
 				android:textColorHint="#fff"
-				android:inputType="textPhonetic"
+				android:inputType="textPersonName"
 				android:padding="20dp"
 				android:drawableLeft="@drawable/account"
 				android:drawablePadding="10dp"/>
@@ -64,11 +64,11 @@
 			android:id="@+id/passwordholder"
 			android:layout_margin="20dp">
 			
-			<EditText
+			<android.support.design.widget.TextInputEditText
 				android:layout_width = "match_parent"
 				android:layout_height = "wrap_content"
-				android:id="@+id/password"
-				android:hint="Password"
+				android:id="@+id/phn"
+				android:hint="Phone Number"
 				android:textColorHint="#fff"
 				android:inputType="textPhonetic"
 				android:drawableLeft="@drawable/password"
@@ -83,13 +83,13 @@
 				android:id="@+id/confirmholder"
 				android:layout_margin="20dp">
 				
-				<EditText
+				<android.support.design.widget.TextInputEditText
 					android:layout_width = "match_parent"
 					android:layout_height = "wrap_content"
-					android:id="@+id/confirm"
-					android:hint="Confirm Password"
+					android:id="@+id/pwd"
+					android:hint="Password"
 					android:textColorHint="#fff"
-					android:inputType="textPhonetic"
+					android:inputType="textPassword"
 					android:drawableLeft="@drawable/password"
 					android:drawablePadding="10dp"
 					android:padding="20dp"/>
@@ -104,6 +104,8 @@
 				android:background="@drawable/btnbg"
 				android:textColor="#fff"
 				android:textSize="20sp"/>
+			
+			
 		
 		</LinearLayout>
 		

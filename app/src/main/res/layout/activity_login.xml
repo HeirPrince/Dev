@@ -6,7 +6,7 @@
 	android:layout_width = "match_parent"
 	android:layout_height = "match_parent"
 	android:background="@drawable/accountbg"
-	tools:context = "nassaty.dev.LoginActivity"
+	tools:context = "nassaty.dev.ui.LoginActivity"
 	android:fitsSystemWindows="true">
 	
 	<TextView
@@ -19,82 +19,98 @@
 		android:textColor="#2196F3"
 		android:id="@+id/title"/>
 	
-	<LinearLayout
+	<android.support.v7.widget.CardView
 		android:layout_width = "match_parent"
 		android:layout_height = "match_parent"
-		android:id="@+id/contents"
-		android:orientation="vertical"
+		android:id="@+id/content"
 		android:layout_below="@+id/title"
-		android:layout_marginTop="20dp">
-		
-		<android.support.design.widget.TextInputLayout
-			android:layout_width = "match_parent"
-			android:layout_height = "wrap_content"
-			android:layout_margin="20dp"
-			android:hint="Phone Number"
-			android:textColorHint="#2196F3">
-			
-			<EditText
-				android:layout_width = "match_parent"
-				android:layout_height = "wrap_content"
-				android:padding="15dp"
-				android:textSize="20sp"
-				android:textColor="#2196F3"
-				android:id="@+id/phone"/>
-		
-		
-		</android.support.design.widget.TextInputLayout>
-		
-		<android.support.design.widget.TextInputLayout
-			android:layout_width = "match_parent"
-			android:layout_height = "wrap_content"
-			android:layout_margin="15dp"
-			android:hint="Password"
-			android:textColorHint="#2196F3">
-			
-			<EditText
-				android:layout_width = "match_parent"
-				android:layout_height = "wrap_content"
-				android:padding="15dp"
-				android:textSize="20sp"
-				android:textColor="#2196F3"
-				android:id="@+id/password"/>
-		
-		</android.support.design.widget.TextInputLayout>
-		
-		<android.support.v7.widget.AppCompatButton
-			android:id = "@+id/appCompatButton"
-			android:layout_width = "match_parent"
-			android:layout_height = "wrap_content"
-			android:layout_gravity = "center"
-			android:layout_margin = "20dp"
-			android:background = "@drawable/btnbg"
-			android:text = "SIGN IN"
-			android:textColor = "#fff"
-			android:onClick="login"/>
+		android:layout_marginTop="30dp"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+		android:layout_marginBottom="10dp"
+		android:elevation="10dp"
+		app:cardCornerRadius="10dp"
+		app:cardBackgroundColor="#fff">
 		
 		<LinearLayout
-			android:layout_width = "wrap_content"
-			android:layout_height = "wrap_content"
-			android:orientation = "horizontal"
-			android:layout_gravity="center">
+			android:layout_width = "match_parent"
+			android:layout_height = "match_parent"
+			android:id="@+id/contents"
+			android:orientation="vertical"
+			android:layout_below="@+id/title"
+			android:layout_marginTop="20dp">
 			
-			<TextView
+			<android.support.design.widget.TextInputLayout
 				android:layout_width = "match_parent"
 				android:layout_height = "wrap_content"
-				android:text = "Don't have an account?"
-				android:textSize="20sp"/>
+				android:layout_margin="20dp"
+				android:hint="Phone Number"
+				android:textColorHint="#2196F3">
+				
+				<EditText
+					android:layout_width = "match_parent"
+					android:layout_height = "wrap_content"
+					android:padding="15dp"
+					android:textSize="20sp"
+					android:textColor="#2196F3"
+					android:id="@+id/phn"/>
 			
-			<TextView
+			
+			</android.support.design.widget.TextInputLayout>
+			
+			<android.support.design.widget.TextInputLayout
 				android:layout_width = "match_parent"
 				android:layout_height = "wrap_content"
-				android:text = " Create one"
-				android:textSize="20sp"
-				android:textStyle="bold"/>
+				android:layout_margin="15dp"
+				android:hint="Password"
+				android:textColorHint="#2196F3">
+				
+				<EditText
+					android:layout_width = "match_parent"
+					android:layout_height = "wrap_content"
+					android:padding="15dp"
+					android:textSize="20sp"
+					android:textColor="#2196F3"
+					android:id="@+id/pwd"/>
+			
+			</android.support.design.widget.TextInputLayout>
+			
+			<android.support.v7.widget.AppCompatButton
+				android:id = "@+id/appCompatButton"
+				android:layout_width = "match_parent"
+				android:layout_height = "wrap_content"
+				android:layout_gravity = "center"
+				android:layout_margin = "20dp"
+				android:background = "@drawable/btnbg"
+				android:text = "SIGN IN"
+				android:textColor = "#fff"
+				android:onClick="login"/>
+			
+			<LinearLayout
+				android:layout_width = "wrap_content"
+				android:layout_height = "wrap_content"
+				android:orientation = "horizontal"
+				android:layout_gravity="center">
+				
+				<TextView
+					android:layout_width = "match_parent"
+					android:layout_height = "wrap_content"
+					android:text = "Don't have an account?"
+					android:textSize="20sp"/>
+				
+				<TextView
+					android:layout_width = "match_parent"
+					android:layout_height = "wrap_content"
+					android:text = " Create one"
+					android:textSize="20sp"
+					android:textStyle="bold"
+					android:id="@+id/slink"/>
+			
+			</LinearLayout>
 		
 		</LinearLayout>
-	
-	</LinearLayout>
+		
+	</android.support.v7.widget.CardView>
 	
 	
 	

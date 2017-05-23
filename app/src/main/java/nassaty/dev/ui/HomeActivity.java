@@ -1,12 +1,14 @@
-package nassaty.dev;
+package nassaty.dev.ui;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.Toast;
+
+import nassaty.dev.R;
 
 public class HomeActivity extends AppCompatActivity {
 
